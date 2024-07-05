@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.menu-close{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header nav{
+        display: none;
+        position: fixed;
+        top:80px;
+        left: 0;
+        width: 100%;
+
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .menu-btn{
+        display: flex;
+        background-color: transparent;
+        border: 0;
+        font-size: 24px;
+    }
+    .menu-open{
+        display: flex;
+        flex-direction: column;
+    }
+}

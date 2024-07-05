@@ -1,0 +1,16 @@
+.cart-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.cart-section .cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
